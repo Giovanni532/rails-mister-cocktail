@@ -9,6 +9,7 @@ class DosesController < ApplicationController
   end
 
   def new
+    @cocktail = Cocktail.find(params[:cocktail_id])
     @dose = Dose.new
   end
 
@@ -28,23 +29,16 @@ class DosesController < ApplicationController
   end
 
   def update
-    respond_to do |format|
+    @cocktail = Cocktail.find(params[:cocktail_id])
       if @dose.update(dose_params)
-        format.html { redirect_to @dose, notice: 'Dose was successfully updated.' }
-        format.json { render :show, status: :ok, location: @dose }
+        redirect_to @cocktail
       else
-        format.html { render :edit }
-        format.json { render json: @dose.errors, status: :unprocessable_entity }
+        render :edit
       end
-    end
   end
 
   def destroy
     @dose.destroy
-    respond_to do |format|
-      format.html { redirect_to doses_url, notice: 'Dose was successfully destroyed.' }
-      format.json { head :no_content }
-    end
   end
 
   private

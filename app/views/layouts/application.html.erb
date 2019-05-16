@@ -11,7 +11,32 @@
   </head>
 
   <body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bgcolor">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+       <%= link_to 'Mister Cocktails', cocktails_path	 , class:"navbar-brand"%>
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       </ul>
+       <form class="form-inline my-2 my-lg-0">
+         <span><%= link_to 'Add Cocktails', new_cocktail_path , class:"spanid my-2 my-sm-0 ml-2"%></span>
+       </form>
+     </div>
+   </nav>
     <%= yield %>
+    <div class="footer">
+    <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+    </div>
+    </div>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>
   </body>
