@@ -1,0 +1,5 @@
+<%= form_for(@ingredient) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_area :name %>
+  <%= f.submit "submit", class: "btn btn-primary" %>
+<% end %>
