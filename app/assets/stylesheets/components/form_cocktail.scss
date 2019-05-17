@@ -1,6 +1,6 @@
-.new-cocktail{
+.new-cocktail h1{
     text-align: center;
-    padding:20px;
+    padding-top:90px;
     color:white;
 }
 
@@ -16,17 +16,17 @@
 }
 
 .form-cocktail{
+    margin-top:-50px !important;
+    text-align: center;
     color:white;
-    padding:40px;
+    padding-left:40px;
+    padding-right:40px;
     width:400px;
     height: 400px;
     margin-top:100px !important;
     margin:0 auto;
 }
 
-.border-radius{
-    border-radius:25px;
-}
 
  .flat-card {
     width: 100%;

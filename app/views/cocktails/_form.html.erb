@@ -1,11 +1,11 @@
 <div class="body-form">
 <div class="form-cocktail form-group">
 <%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name,label: 'Partage ton cocktail avec nous !', class: "form-control border-radius" %>
+  <%= f.input :name,label: 'Partage ton cocktail avec nous !', class: "form-control" %>
   <%= f.input :photo, label: 'Partage avec nous sa gueule ! :)'%>
   <%= f.input :photo_cache, as: :hidden %>
   <%= f.submit "submit", class: "btn btn-outline-primary btn-cover" %>
 <% end %>
 </div>
 </div>
-
+</div>
