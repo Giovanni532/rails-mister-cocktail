@@ -25,12 +25,14 @@
       <div class="row">
         <div class="col-8">
           <div class="flat-show-card">
-            <% @cocktail.doses.each do |dose| %>
             <h2>Desrciption :</h2>
+            <% @cocktail.doses.each do |dose| %>
             <p class="flat-show-address"><%= dose.description %></p>
+            <% end %>
           </div>
           <div class="flat-show-card">
             <h3>ingredient :</h3>
+            <% @cocktail.doses.each do |dose| %>
             <p><%= dose.ingredient.name %></p>
             <% end %>
       </div>
