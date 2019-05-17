@@ -18,3 +18,10 @@
 import 'bootstrap';
 
 console.log('Hello World from Webpacker')
+
+$(document).ready(function(){
+    $( "a.span" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
+});

@@ -20,6 +20,7 @@ class CocktailsController < ApplicationController
 
   # GET /cocktails/1/edit
   def edit
+    @cocktail = Cocktail.find(params[:id])
   end
 
   # POST /cocktails

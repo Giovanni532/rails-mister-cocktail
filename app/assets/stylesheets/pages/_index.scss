@@ -1,15 +1,17 @@
 // Import page-specific CSS files here.
 @import "home";
+
 .container {
     text-align: center;
 }
 .banner {
     background-size: cover;
     background-position: center;
-    padding: 150px 0;
+    padding: 210px 0;
   }
   
   .banner h1 {
+    padding:20px;
     margin: 0;
     color: white;
     text-shadow: 1px 1px 3px rgba(255,255,255,0.2);
@@ -19,9 +21,10 @@
   }
   
   .banner p {
+    padding:20px;
     font-size: 20px;
     color: white;
-    opacity: .7;
+    opacity: .9;
     text-shadow: 1px 1px 3px rgba(255,255,255,0.2);
     text-align: center;
   }

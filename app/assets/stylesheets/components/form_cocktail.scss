@@ -1,0 +1,129 @@
+.new-cocktail{
+    margin-top:60px;
+}
+
+.new-cocktail h1{
+    padding:20px;
+}
+
+.cocktail-body{
+    background-image: asset-url('formbg.svg');                        
+}
+
+.form-cocktail{
+    padding:40px;
+    width:400px;
+    height: 400px;
+    margin-top:100px !important;
+    margin:0 auto;
+}
+
+.form-cocktail input{
+    border-radius:25px;
+}
+
+body{
+    margin: 0;
+    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+}
+
+ .flat-card {
+    width: 100%;
+    position: relative;
+    margin: .5rem 0 1rem 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.flat-card-image {
+    margin-top:30px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200);
+}
+
+.flat-card-content {
+    padding: 24px;
+    margin-bottom:30px;
+    background-color: #F8F9FA;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.flex {
+    display:flex;
+}
+
+.flat-card-actions {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 16px 24px;
+}
+
+.icons {
+    margin-top:5px;
+    margin-right:5px;
+}
+
+.map {
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+}
+
+.flat-show-card {
+    background: #F8F9FA;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+input-group-addon:not(:last-child) {
+    border-right: 0;
+}
+input-group-addon:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.flat-show-address {
+    font-weight: 300;
+    font-size: 20px;
+    color: #333;
+}
+
+.margin-top-negative {
+    margin-top:-75px;
+}
+
+.input-group-addon {
+    padding: .5rem .75rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    color: #495057;
+    text-align: center;
+    background-color: #e9ecef;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+
+.body-show {
+    margin-bottom: 70px !important;
+}

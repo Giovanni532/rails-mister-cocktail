@@ -4,8 +4,5 @@
 @import "navbar";
 @import "button";
 @import "container_coktails";
-
-body {
-    background-image: asset-url('header.svg');
-    background-position: center;
-}
+@import "form_cocktail";
+@import "show";

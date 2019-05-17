@@ -1,6 +1,6 @@
-<h1>Editing Cocktail</h1>
-
-<%= render 'form', cocktail: @cocktail %>
-
-<%= link_to 'Show', @cocktail %> |
-<%= link_to 'Back', cocktails_path %>
+<div class="form-cocktail form-group">
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name,label: 'Give a cocktail name please', class: "form-control" %>
+  <%= f.submit "submit", class: "btn btn-outline-primary" %>
+<% end %>
+</div>

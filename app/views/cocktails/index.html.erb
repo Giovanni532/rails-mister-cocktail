@@ -1,23 +1,25 @@
-<div class="banner">
-  <div class="container">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://4.bp.blogspot.com/-Wo8PcI4u8HM/UB45eV-FkMI/AAAAAAAAEao/WbEdCBrVOvI/s1600/hd-cocktail-wallpaper-met-heerlijke-gekleurde-cocktails-achtergrond.jpg);">
+<div class="container">
     <h1>Do you like <strong>CockTails</strong> ?</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <span><%= link_to 'Add Cocktail', new_cocktail_path, class:"span" %></span>
+    <p>I like cocktails and I want to share my passion with those who want to discover cocktails !</p>
+    <span><%= link_to 'All Cocktails', "#cocktails", class:"span" %></span>
+    <span><%= link_to "Add cocktail", new_cocktail_path, id: "span" %></span>
   </div>
 </div>
 
-<% @cocktails.first(3).each do |cocktail| %>
-<div class="container-body">
+<div class="row">
+<% @cocktails.each do |cocktail| %>
+<div id="cocktails" class="container-body">
         <div class="container-box">
             <div class="box-project">
                 <div class="imgBx">
+                <%= image_tag "mojito.png", alt: "mojito", width: 400, height: 400%>
                     <div class="content">
                         <h3>
                             <%= cocktail.name %>
                         </h3>
                         <div class="op">
-                            <button><%= link_to 'Add Cocktail', new_cocktail_path, class:"button" %></button>
-                            <button><%= link_to 'Add Cocktail', new_cocktail_path, class:"button" %></button>
+                            <button><%= link_to 'Edit', cocktail_path(cocktail), class:"button" %></button>
                         </div>
                     </div>
                 </div>
@@ -25,3 +27,4 @@
         </div>
     </div>
 <% end %>
+</div>

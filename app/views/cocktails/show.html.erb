@@ -1,11 +1,55 @@
-<p id="notice"><%= notice %></p>
+<head>
+  <style type="text/css">.turbolinks-progress-bar {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #0076ff;
+    z-index: 9999;
+    transition: width 300ms ease-out, opacity 150ms 150ms ease-in;
+    transform: translate3d(0, 0, 0);
+  }
+  </style>
+</head>
+  <body>
+  <div class="body-show">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://4.bp.blogspot.com/-Wo8PcI4u8HM/UB45eV-FkMI/AAAAAAAAEao/WbEdCBrVOvI/s1600/hd-cocktail-wallpaper-met-heerlijke-gekleurde-cocktails-achtergrond.jpg);">
+<div class="container">
+    <h1><%= @cocktail.name %></h1>
+    <%# <span><%= link_to 'Edit a name', edit_cocktail_path(@cocktail), id:"span" %></span> %>
+    <span><%= link_to "Edit a description", new_cocktail_dose_path(@cocktail), id: "span" %></span>
+    <%= link_to "Delete", cocktail_path(@cocktail),method: :delete, data: { confirm: "Are you sure?" }, class: "m-3 btn btn-danger" %>
+  </div>
+</div>
+    <div class="container margin-top-negative">
+      <div class="row">
+        <div class="col-8">
+          <div class="flat-show-card">
+            <% @cocktail.doses.each do |dose| %>
+            <h2>Desrciption :</h2>
+            <p class="flat-show-address"><%= dose.description %></p>
+          </div>
+          <div class="flat-show-card">
+            <h3>ingredient :</h3>
+            <p><%= dose.ingredient.name %></p>
+            <% end %>
+      </div>
+    </div>
 
-<%= @cocktail.name %>
-  <% @cocktail.doses.each do |dose| %>
-    <%= dose.description %>
-    <%= dose.ingredient.name %>
-  <% end %>
-</p>
+    <div class="col-4">
+      <div class="flat-show-card">
+        <div class="flex-align">
+          <h6 class="no-mb">Share</h6>
 
-<%= link_to 'Edit', new_cocktail_dose_path(@cocktail) %> |
-<%= link_to 'Back', cocktails_path %>
+          <div class="flex">
+            <i class="fab fa-facebook-square fa-2x mr-2"></i>
+            <i class="fab fa-twitter-square fa-2x mr-2"></i>
+            <i class="fab fa-pinterest-square fa-2x mr-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

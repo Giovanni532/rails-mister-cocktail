@@ -2,6 +2,7 @@ span {
     position: relative;
     z-index: 1;
     padding:10px;
+    margin-left:20px;
   }
   
   span::before {
@@ -12,7 +13,7 @@ span {
     bottom: 0;
     left: -0.25em;
     right: -0.25em;
-    background-color: rgb(136, 85, 253);
+    background-color: #F2DB09;
     transform-origin: bottom center;
     transform: scaleY(0.1);
     transition: all 0.1s ease-in-out;
@@ -20,7 +21,7 @@ span {
   
   span:hover::before {
     transform: scaleY(1);
-    background-color: rgb(136, 85, 253);
+    background-color: #00BFFF;
   }
   
   .span {
@@ -32,6 +33,15 @@ span {
         color:white;
         text-decoration: none; 
       }
+  }
+
+  #span {
+    color:white;
+    text-decoration: none;
+    &:hover {
+      color:white;
+      text-decoration: none; 
+    }
   }
   .spanid {
     padding:10px;
@@ -50,10 +60,10 @@ span {
     font-size: inherit;
     font-family: inherit;
     color: white;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     outline: none;
     border: none;
-    background-color: rgb(136, 85, 253);
+    background-color: #00BFFF;
   }
   
   button::before {
@@ -64,7 +74,7 @@ span {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #222;
+    background-color: #F2DB09;
     transform-origin: center right;
     transform: scaleX(0);
     transition: transform 0.25s ease-in-out;
