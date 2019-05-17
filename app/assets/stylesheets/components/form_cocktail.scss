@@ -1,16 +1,22 @@
 .new-cocktail{
-    margin-top:60px;
+    text-align: center;
+    padding:20px;
+    color:white;
 }
 
-.new-cocktail h1{
+.new-cocktail p{
+    text-align: center;
     padding:20px;
+    color:white;
 }
 
 .cocktail-body{
-    background-image: asset-url('formbg.svg');                        
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://4.bp.blogspot.com/-Wo8PcI4u8HM/UB45eV-FkMI/AAAAAAAAEao/WbEdCBrVOvI/s1600/hd-cocktail-wallpaper-met-heerlijke-gekleurde-cocktails-achtergrond.jpg);  
+    height: 100vh;                      
 }
 
 .form-cocktail{
+    color:white;
     padding:40px;
     width:400px;
     height: 400px;
@@ -18,18 +24,8 @@
     margin:0 auto;
 }
 
-.form-cocktail input{
+.border-radius{
     border-radius:25px;
-}
-
-body{
-    margin: 0;
-    font-family: "Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
 }
 
  .flat-card {
@@ -93,10 +89,10 @@ body{
     width: 100%;
 }
 
-input-group-addon:not(:last-child) {
+.input-group-addon:not(:last-child) {
     border-right: 0;
 }
-input-group-addon:not(:first-child) {
+.input-group-addon:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -126,4 +122,10 @@ input-group-addon:not(:first-child) {
 
 .body-show {
     margin-bottom: 70px !important;
+}
+
+.btn-cover {
+    background-color: #F2DB09;
+    border:none;
+    color:white;
 }

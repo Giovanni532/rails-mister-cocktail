@@ -1,6 +1,3 @@
 <div class="form-cocktail form-group">
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name,label: 'Give a cocktail name please', class: "form-control" %>
-  <%= f.submit "submit", class: "btn btn-outline-primary" %>
-<% end %>
+<%= render 'form', cocktail: @cocktail %>
 </div>

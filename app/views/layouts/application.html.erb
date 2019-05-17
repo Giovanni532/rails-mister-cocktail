@@ -12,26 +12,7 @@
   </head>
 
   <body>
-    <div id="navbar-border" class="navbar fixed-top navbar-expand-sm navbar-light navbar-lewagon">
-      <%= link_to "Misteer Cocktails", cocktails_path, class: "navbar-brand" %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <a class="navbar-toggler-icon"></a>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <%= link_to "Home", cocktails_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to "Add cocktail", new_cocktail_path, class: "nav-link" %>
-          </li>
-        </ul>
-      </div>
-    </div>
     <%= yield %>
-    <div id='footer'>
-    </div>
-
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>
   </body>

@@ -1,3 +1,19 @@
+    <div id="navbar-border" class="navbar fixed-top navbar-expand-sm navbar-light navbar-lewagon">
+      <%= link_to "Misteer Cocktails", cocktails_path, class: "navbar-brand" %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-toggler-icon"></a>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <%= link_to "Home", cocktails_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Add cocktail", new_cocktail_path, class: "nav-link" %>
+          </li>
+        </ul>
+      </div>
+    </div>
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://4.bp.blogspot.com/-Wo8PcI4u8HM/UB45eV-FkMI/AAAAAAAAEao/WbEdCBrVOvI/s1600/hd-cocktail-wallpaper-met-heerlijke-gekleurde-cocktails-achtergrond.jpg);">
 <div class="container">
     <h1>Do you like <strong>CockTails</strong> ?</h1>
@@ -13,7 +29,7 @@
         <div class="container-box">
             <div class="box-project">
                 <div class="imgBx">
-                <%= image_tag "mojito.png", alt: "mojito", width: 400, height: 400%>
+                <%= cl_image_tag cocktail.photo, height: 400, width: 400, crop: :fill %>
                     <div class="content">
                         <h3>
                             <%= cocktail.name %>
@@ -28,3 +44,5 @@
     </div>
 <% end %>
 </div>
+    <div id='footer'>
+    </div>
