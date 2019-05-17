@@ -17,7 +17,6 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://4.bp.blogspot.com/-Wo8PcI4u8HM/UB45eV-FkMI/AAAAAAAAEao/WbEdCBrVOvI/s1600/hd-cocktail-wallpaper-met-heerlijke-gekleurde-cocktails-achtergrond.jpg);">
 <div class="container">
     <h1><%= @cocktail.name %></h1>
-    <%# <span><%= link_to 'Edit a name', edit_cocktail_path(@cocktail), id:"span" %></span> %>
     <span><%= link_to "Edit a description", new_cocktail_dose_path(@cocktail), id: "span" %></span>
     <%= link_to "Delete", cocktail_path(@cocktail),method: :delete, data: { confirm: "Are you sure?" }, class: "m-3 btn btn-danger" %>
   </div>
